@@ -18,4 +18,6 @@ public class WebMvcConfig implements WebMvcConfigurer{
 		registrationBean.addUrlPatterns("/api/*"); //필터가 적용될 URL패턴
 		return registrationBean;
 	}
+	
+	
 }
