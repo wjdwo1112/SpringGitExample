@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-deploy:
-  runs-on: self-hosted
+    runs-on: self-hosted
 
   steps:
 
@@ -18,8 +18,8 @@ jobs:
       uses: actions/setup-java@v3
 
       with:
-      java-version: '21'
-      distribution: 'temurin'
+        java-version: '21'
+        distribution: 'temurin'
 
     - name: Build project with Maven
       run: mvn clean package
