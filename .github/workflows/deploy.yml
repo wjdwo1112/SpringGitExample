@@ -30,27 +30,27 @@ jobs:
       run: |
         $containerName = "${{ secrets.DOCKER_CONTAINER_NAME }}"
         $existingContainer = docker ps -a --filter "name=$containerName" --format "{{.Names}}"
-      if ($existingContainer -eq $containerName) { 
+        if ($existingContainer -eq $containerName) { 
         Write-Host "Stopping and removing container: $containerName"
         docker stop $containerName
         docker rm $containerName
-      } else {
+        } else {
         Write-Host "No container named $containerName found."
-      }
+        }
 
 
     - name: Remover old Docker image
       shell: powershell
       run: |
         $imageName = "${{ secrets.DOCKER_IMAGE_NAME }}"
-      try {
+        try {
         Write-Host "Attempting to remove image: $imageName"
         docker rmi -f $imageName
         Write-Host "Image $imageName removed successfully."
-      } catch {
+        } catch {
         Write-Host "Failed to remove image: $imageName"
         Write-Host "Error: $_"
-      }
+        }
 
 
     - name: Build Docker image
