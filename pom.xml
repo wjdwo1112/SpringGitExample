@@ -5,16 +5,6 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-<<<<<<< HEAD
-		<version>3.5.4</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>myapp</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>myapp</name>
-	<description>Demo project for Spring Boot</description>
-=======
 		<version>3.5.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
@@ -24,7 +14,6 @@
 	<packaging>jar</packaging>
 	<name>test</name>
 	<description>My REST API</description>
->>>>>>> 8ff75d6 (init: spring boot project)
 	<url/>
 	<licenses>
 		<license/>
@@ -44,44 +33,16 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-<<<<<<< HEAD
-			<artifactId>spring-boot-starter-jdbc</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-=======
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
->>>>>>> 8ff75d6 (init: spring boot project)
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-<<<<<<< HEAD
-		<dependency>
-			<groupId>org.mybatis.spring.boot</groupId>
-			<artifactId>mybatis-spring-boot-starter</artifactId>
-			<version>3.0.5</version>
-		</dependency>
 		
-		<!--file upload-->
-		<dependency>
-			<groupId>commons-fileupload</groupId>
-			<artifactId>commons-fileupload</artifactId>
-			<version>1.5</version>
-		</dependency>
 		
-		<!--Xss filter-->
-		<dependency>
-			<groupId>org.jsoup</groupId>
-			<artifactId>jsoup</artifactId>
-			<version>1.15.3</version>
-		</dependency>
 		
-=======
 
->>>>>>> 8ff75d6 (init: spring boot project)
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -89,13 +50,9 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
-<<<<<<< HEAD
-			<groupId>com.oracle.database.jdbc</groupId>
-			<artifactId>ojdbc11</artifactId>
-=======
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
->>>>>>> 8ff75d6 (init: spring boot project)
+
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
@@ -105,17 +62,8 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-<<<<<<< HEAD
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.mybatis.spring.boot</groupId>
-			<artifactId>mybatis-spring-boot-starter-test</artifactId>
-			<version>3.0.5</version>
-			<scope>test</scope>
-		</dependency>
-=======
+
+
 			<artifactId>spring-boot-starter-tomcat</artifactId>
 			<scope>provided</scope>
 		</dependency>
@@ -130,7 +78,7 @@
  			<artifactId>jackson-dataformat-xml</artifactId>
  		 </dependency>
  		 
->>>>>>> 8ff75d6 (init: spring boot project)
+
 	</dependencies>
 
 	<build>
@@ -160,12 +108,12 @@
 				</configuration>
 			</plugin>
 		</plugins>
-<<<<<<< HEAD
-	</build>
-=======
+
+	
+
 		<finalName>test</finalName>
 	</build>
 	
->>>>>>> 8ff75d6 (init: spring boot project)
+
 
 </project>
