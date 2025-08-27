@@ -29,7 +29,7 @@ jobs:
       shell: powershell
       run: |
         $containerName = "${{ secrets.DOCKER_CONTAINER_NAME }}"
-      $existingContainer = docker ps -a --filter "name=$containerName" --format "{{.Names}}"
+        $existingContainer = docker ps -a --filter "name=$containerName" --format "{{.Names}}"
       if ($existingContainer -eq $containerName) { 
         Write-Host "Stopping and removing container: $containerName"
         docker stop $containerName
